@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<title>hello world..</title>
+	<head>
+	<body>
+		<button id="doit">doit</button>
+		<button id="clear">clear</button>
+		<div id="result"></div>
+
+		<script src="js/zepto.min.js"></script>
+		<script src="js/mymodule.js"></script>
+		<script>
+			$('#doit').click(function(){
+				MyModule.doit($('#result'));
+			});
+			$('#clear').click(function(){
+				$('#result').html('');
+			});
+		</script>
+	</body>
+</html>
+
